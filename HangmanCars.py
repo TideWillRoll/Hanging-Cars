@@ -1,4 +1,4 @@
-#Python program for Hangman with cars
+#Python program for Hangman with car brands
 import random
 from collections import Counter
 
@@ -11,7 +11,7 @@ someWords = ["Acura", "Aston Martin", "Audi", "Bentley", "BMW", "Bugatti", "Buic
 word = random.choice(someWords)
 
 if __name__=='__main__':
-    print("Guess the word! Hint: word is a name of a car")
+    print("Guess the word! Hint: word is a car brand")
     for i in word:
         print('_', end='')
         #For printing the empty spaces for letters of the word
@@ -39,7 +39,7 @@ if __name__=='__main__':
                 print("Enter only a LETTER")
                 continue
             elif len(guess) > 1:
-                print("Enter only a SINGLE letter")
+                print("Enter only one letter")
                 continue
             elif guess in letterGuessed:
                 print("You have already guessed that letter")
