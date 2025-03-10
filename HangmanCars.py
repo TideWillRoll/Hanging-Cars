@@ -2,16 +2,17 @@
 import random
 from collections import Counter
 
-someWords = ["Acura", "Aston Martin", "Audi", "Bentley", "BMW", "Bugatti", "Buick", "Chevy", "Chrysler", "Dodge", "Ferrari", "Fiat", "Ford", "Genesis", 
-             "GMC", "Honda", "Hyundai", "Infiniti", "Jaguar", "Kia", "Koenigsegg", "Lamborghini", "Lexus", "Lotus", "Maserati", 
-             "McLaren", "Mercedes", "Mitsubishi", "Nissan", "Pagani", "Pontiac", "Porsche", "Plymouth", "Renault", "Rolls Royce", "Saleen", "Shelby", 
+someWords = ["Acura", "Aston Martin", "Audi", "Bentley", "BMW", "Bugatti", "Buick", "Chevy", "Chrysler", "Dodge", 
+             "Ferrari", "Fiat", "Ford", "Genesis", "GMC", "Honda", "Hyundai", "Infiniti", "Jaguar", "Kia", "Koenigsegg", 
+             "Lamborghini", "Lexus", "Lotus", "Maserati", "McLaren", "Mercedes", "Mitsubishi", "Nissan", 
+             "Pagani", "Pontiac", "Porsche", "Plymouth", "Renault", "Rolls Royce", "Saleen", "Shelby", 
              "Tesla", "Toyota", "VW", "W Motors"]
 
 #randomly chooses a secret word from "someWords".
 word = random.choice(someWords)
 
 if __name__=='__main__':
-    print("Guess the word! Hint: word is a car brand")
+    print("Guess the word! Hint: word is a car brand *Case-sensitive*")
     for i in word:
         print('_', end='')
         #For printing the empty spaces for letters of the word
